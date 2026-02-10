@@ -36,17 +36,55 @@
 
 //Arrays , Object , Function
 
-const heros = ["Monu","Shaktiman","naagraj"];
+// const heros = ["Monu","Shaktiman","naagraj"];
 
-let myObj = {
-    name:"monu kumar",
-    age:20
+// let myObj = {
+//     name:"monu kumar",
+//     age:20
+// }
+
+// console.log(myObj);
+
+
+// const myFunction =function(){
+//  console.log("hello world");
+// }
+
+// myFunction()
+
+// console.log(typeof myFunction);//Function (Object Function)
+
+
+
+//*************************************** */
+
+//m Stack (Primitive dataTypes) , Heap (Non-Primitive dataTypes)
+
+let myYoutubeName="limitless" // (Goes in stack)
+let anotherName=myYoutubeName
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+anotherName="Code drill";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let user1={
+    email:"monu@google.com",
+    name:"Monu Kumar ",
+    age:21
 }
 
-const myFunction =function(){
- console.log("hello world");
-}
+console.log(user1);
 
-myFunction()
 
-console.log(typeof myFunction);//Function (Object Function)
+let user2=user1
+
+user1.name="Monu Kumar Yadav"
+user2.email="monu@amazon.com"
+
+console.log(user1);
+console.log(user2);
+
